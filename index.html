@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>☕ ~憩いのカフェ~ ☕</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="main-nav">
+                <a class="logo">憩いのカフェ</a>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#home">ホーム</a></li>
+                        <li><a href="#menu">メニュー</a></li>
+                        <li><a href="#about">私たちについて</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header><!-- ヘッダー -->
+
+        <section id="home">
+            <div class="home-content">
+                <h2>心安らぐひとときを</h2>
+                <p>挽きたてのコーヒーと手作りスイーツで、あなたの一日を豊かに。</p>
+                <button>メニューを見る</button>
+            </div>
+        </section><!-- ホーム -->
+
+        <section id="menu">
+            <h2 class="wrapper">私たちのメニュー</h2>
+            <h3 class="wrapper">☕  コーヒー</h3>
+            <div class="grid-contener">
+                <div class="grid-item">
+                    <div class="grid-content">
+                        <img src="image/spe-coff.jpg" class="coff-image" alt="スペシャルティコーヒー">
+                        <h4>スペシャルティコーヒー</h4>
+                        <p>厳選した豆を使用しており、一杯ずつ丁寧にハンドドリップで淹れます。</p>
+                        <b class="yen">￥550～</b>
+                    </div>
+                </div>
+                <div class="grid-item" id="cafe-latte">
+                    <div class="grid-content">
+                        <img src="image/cafelate.jpg" class="coff-image" alt="カフェラテ">
+                        <h4>カフェラテ</h4>
+                        <p>濃厚なエスプレッソとスチームミルクの絶妙なハーモニー。</p>
+                        <b class="yen">￥580～</b>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-content">
+                        <img src="image/espresso.jpg" class="coff-image" alt="エスプレッソ">
+                        <h4>エスプレッソ</h4>
+                        <p>芳醇な香りと深みのある味わい。一口で至福の体験を。</p>
+                        <b class="yen">￥400～</b>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="wrapper">🍰  スイーツ</h3>
+            <div class="grid-contener" id="cake">
+                <div class="grid-item">
+                    <div class="grid-content">
+                        <img src="image/cheese-cake.jpg" class="coff-image" alt="濃厚チーズケーキ">
+                        <h4>濃厚チーズケーキ</h4>
+                        <p>なめらかな口当たりと、クリームチーズの豊かな風味。</p>
+                        <b class="cake-yen">￥600～</b>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-content">
+                        <img src="image/fruitstalt.jpg" class="coff-image" alt="フルーツタルト">
+                        <h4>季節のフルーツタルト</h4>
+                        <p>旬のフルーツをふんだんに使った、見た目も美しいタルト。</p>
+                        <b class="cake-yen">￥700～</b>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="grid-content">
+                        <img src="image/gato.jpg" class="coff-image" alt="ガトーショコラ">
+                        <h4>ガトーショコラ</h4>
+                        <p>しっとり濃厚なチョコレートケーキ。コーヒーとの相性抜群。</p>
+                        <b class="cake-yen">￥650～</b>
+                    </div>
+                </div>
+            </div>
+        </section><!-- メニュー -->
+
+        <section id="about" class="wrapper">
+            <div class="about-content">
+            <h2>私たちについて</h2>
+                <p>「憩いのカフェ」は、日常の喧騒から離れ、お客様に心安らぐ時間を提供するために生まれました。
+                    私たちは、一杯のコーヒーがもたらす幸福と、手作りスイーツの温かさを大切にしています。</p>
+                <p>世界中から厳選された高品質なコーヒー豆を使用し、
+                    バリスタが一杯ずつ心を込めてハンドドリップで淹れるコーヒーは、格別な味わいです。
+                    また、パティシエが旬の素材を活かして作るスイーツは、目にも舌にも喜びをもたらします。</p>
+                <p>居心地の良い空間で、大切な人との語らいや、自分だけの静かな時間を過ごしませんか？
+                    皆様のお越しを心よりお待ちしております。</p>
+            </div>
+            <button>Cafe Interior</button>
+        </section>
+
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <form>
+                <p>お名前:</p>
+                <input type="text" placeholder="お名前を入力してください">
+                <p>メールアドレス:</p>
+                <input type="email" placeholder="メールアドレスを入力してください">
+                <p>メッセージ:</p>
+                <textarea name="message" placeholder="メッセージを入力してください"></textarea>
+                <input type="submit" value="送信">
+            </form>
+        </section>
+
+        <footer class="wrapper">
+            <div>
+                <p>&copy; 2025 憩いのカフェ. All rights reserved.</p>
+                <p><a>プライバシーポリシー</a> <a>利用規約</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

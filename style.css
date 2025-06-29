@@ -1,0 +1,262 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.wrapper {
+    text-align: center;
+}
+
+/*-------------------- ヘッダー --------------------*/
+.header {
+    padding: 1% 2%;
+    height: 14vh;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #47763c;
+    padding-top: 0.5rem;
+}
+.nav {
+    display: flex;
+    padding-right: 1.8rem;
+    padding-top: 1rem;
+}
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+.nav li {
+    white-space: nowrap;
+    margin-left: 2.8rem;
+    list-style: none;
+    font-weight: 450;
+}
+
+/* ------------------ホーム--------------- */
+#home {
+    background-image: url(image/home.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.home-content {
+    width: 53%;
+    height: 42%;
+    text-align: center;
+    background-color: #1b3f1380;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.home-content h2 {
+    font-size: 3rem;
+    font-weight: 1000;
+}
+.home-content p {
+    margin-top: 2%;
+    font-size: 1.2rem;
+}
+.home-content button {
+    width: 30%;
+    height: 20%;
+    border-radius: 20px;
+    background-color: #0f8963;
+    color: white;
+    font-weight: 500;
+    margin-top: 5%;
+}
+/*-------------------- メニュー ----------------------*/
+#menu h2 {
+    margin-top: 4rem;
+    font-size: 2.3rem;
+    color: #076346;
+}
+#menu h3 {
+    margin-top: 3rem;
+    font-size: 1.9rem;
+}
+.grid-contener {
+    width: 96.5%;
+    margin: 1.8rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 390px;
+    gap: 25px;
+}
+.grid-item {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    background-color:rgb(247, 250, 249);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.grid-item:hover {
+    z-index: 1;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.grid-content {
+    width: 85%;
+    height: 100%;
+    margin: 1.5rem auto; 
+}
+.coff-image {
+    height: 50%;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    color: #0f8963;
+    background-color: #c5e9c9;
+}
+.grid-content h4 {
+    margin-top: 0.9rem;
+    font-size: 1.25rem;
+    color: #0e6c4e;
+}
+.grid-content p {
+    margin-top: 0.6rem;
+    font-weight: 330;
+    font-size: 1rem;
+}
+.yen {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: hsl(161, 81%, 28%);
+}
+
+/*🍰*/
+.cake-image {
+    height: 50%;
+    border-radius: 10px;
+    color: #be263f;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #e9ccc4;
+}
+#cake h4 {
+    color: #8e5a48;
+}
+.cake-yen {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: #8e5a48;
+}
+
+/*----------------- 私たちについて ------------------*/
+#about {
+    margin-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(247, 250, 249);
+}
+.about-content {
+    width: 60%;
+    margin: 0 auto;
+}
+#about h2 {
+    color: #076346;
+    font-size: 2.3rem;
+}
+#about p {
+    margin-top: 3%;
+    font-size: 1.1rem;
+    color: #434f58;
+}
+#about button {
+    width: 45%;
+    height: 40%;
+    background-color: #2f4e7980;
+    margin-top: 3%;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #071533;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------- お問い合わせ ----------------*/
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10%;
+}
+#contact h2 {
+    color: #076346;
+    font-size: 2.3rem;
+    margin-top: 5%;
+}
+#contact p {
+    margin: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+#contact form {
+    width: 40%;
+    height: 85vh;
+    margin-top: 3%;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    border-radius: 15px;
+    background-color: rgb(253, 249, 251);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  margin: 3px;
+  border-radius: 5px;
+  width: 90%; /* 必要なら幅調整 */
+  box-sizing: border-box;
+}
+textarea {
+    height: 30%;
+}
+input[type="submit"] {
+    display: block;
+    color: white;
+    background-color: #0f8963;
+    font-weight: 600;
+    margin: 3px auto;
+    width: 95px;
+    height: 45px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+/*----------------- フッター -------------------------*/
+footer {
+    color: white;
+    background-color: #071e30;
+    height: 20%;
+    padding-top: 2%;
+}
+footer p {
+    line-height: 2;
+}
